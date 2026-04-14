@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { Manrope } from 'next/font/google';
 import "./globals.css";
 import LenisProvider from '@/components/providers/LenisProvider';
+import ThemeProvider from '@/components/providers/ThemeProvider';
 import StructuredData from '@/components/seo/StructuredData';
 import { SITE_CONFIG } from '@/lib/config';
 
@@ -17,19 +18,20 @@ export const metadata: Metadata = {
   title: SITE_CONFIG.title,
   description: SITE_CONFIG.description,
   keywords: [
-    'Moideen Mashad',
-    'Mashad',
-    'Frontend Developer',
-    'React Developer',
-    'Next.js Expert',
+    'Sruthi Sasidharan',
+    'Python Developer',
+    'Django Developer',
+    'Full Stack Developer',
+    'Django REST Framework',
+    'Backend Developer',
     'Web Developer',
-    'UI/UX',
-    'JavaScript',
-    'TypeScript',
+    'MySQL',
+    'PostgreSQL',
+    'RESTful API',
+    'MVT Architecture',
+    'Python Full Stack',
     'Portfolio',
-    'Responsive Design',
-    'Single Page Application',
-    'Modern Web Development',
+    'Software Developer',
   ],
   authors: [{ name: SITE_CONFIG.name }],
   creator: SITE_CONFIG.name,
@@ -67,7 +69,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   icons: {
     icon: [{ url: '/favicon.ico' }, { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' }],
-    apple: [{ url: '/profile.jpg', sizes: '180x180', type: 'image/jpeg' }],
+    apple: [{ url: '/profile.jpeg', sizes: '180x180', type: 'image/jpeg' }],
   },
 };
 
@@ -83,7 +85,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <StructuredData />
       </head>
       <body suppressHydrationWarning>
-        <LenisProvider>{children}</LenisProvider>
+        <ThemeProvider>
+          <LenisProvider>{children}</LenisProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
