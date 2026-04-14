@@ -7,5 +7,5 @@ export { default as ProgressBar } from './ProgressBar';
 export { default as ScrollUp } from './ScrollUp';
 export { default as SectionSkeleton } from './SectionSkeleton';
 export { default as Skeleton } from './Skeleton';
-export { default as ThemeToggle } from './ThemeToggle';
+
 
