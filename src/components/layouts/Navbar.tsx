@@ -143,8 +143,8 @@ const Navbar = () => {
             
             <div className="mt-4 px-4">
               <a
-                href="/resume.pdf"
-                download="Sruthi_Sasidharan_Resume.pdf"
+                href="/Sruthi-Sasidharan-Resume.pdf"
+                download="Sruthi-Sasidharan-Resume.pdf"
                 className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl font-bold bg-slate-900 text-white hover:bg-black transition-all no-underline"
                 onClick={handleNavClick}
               >
