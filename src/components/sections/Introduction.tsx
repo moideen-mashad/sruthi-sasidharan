@@ -40,7 +40,7 @@ const Introduction = () => {
                     <Link
                       key={item.title}
                       href={item.LinkTo}
-                      className="btn_base btn_outline_primary social_media_icon flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 no-underline"
+                      className="btn_base btn_outline_primary flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 no-underline"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit my ${item.title} profile`}
